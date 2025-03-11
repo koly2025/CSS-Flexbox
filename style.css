@@ -1,0 +1,30 @@
+/* Styling for the flex container */
+.flex-container {
+    display: flex;  /* Enables Flexbox */
+    flex-direction: row; /* Items arranged in a row (default) */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    background-color: lightgray;
+    padding: 20px;
+    gap: 10px; /* Space between items */
+    height: 200px;
+}
+
+/* Styling for the flex items */
+.box {
+    background-color: royalblue;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    line-height: 80px;
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+}
+
+/* Responsive behavior */
+@media (max-width: 600px) {
+    .flex-container {
+        flex-direction: column; /* Change to vertical layout on smaller screens */
+    }
+}
